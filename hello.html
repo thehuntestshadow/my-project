@@ -8,31 +8,26 @@
     <title>My first Html Page</title>
   </head>
   <body>
-    <h1 id="text">Hello, World!</h1>
-    <h2 id="text_nou">Welcome to my first HTML page</h2>
-    <a href="hello2.html"><h3>this is h3</h3></a>
-    <h4>this is h4</h4>
-    <h5>this is h5</h5>
-    <h6>this is h6</h6>
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>
-    <p>This is a basic HTML file.</p>
-    <ol>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ol>
-    <img
-      src="https://seethewild.org/wp-content/uploads/2024/12/Fox-1.jpg"
-      alt="fox"
-      width="300px"
-      height="250px"
-    />
+    <div>
+    <h1>Contact form</h1>
+    <form id="formular">
+        <label for="name">Nume:</label>
+        <input type="text" id="name" name="name" required />
 
-    <input type="text" id="input" placeholder="scrie o poezie" />
-    <button id="btn">
-        Click here
-    </button>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-?[0-9]{3}-?[0-9]{3}" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+        
+        <button type="submit">Submit</button>
+
+    </form>
+    
+    </div>
 
     <script src="script.js"></script>
   </body>
